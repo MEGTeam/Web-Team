@@ -1,0 +1,137 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 24, 2022, 9:55:12 PM
+    Author     : E M T
+*/
+.titleback{/*background-image*/
+    text-transform: capitalize;
+    background-color: #897393;
+    height: 625px;
+    margin: -8px 0px 0px -8px;
+    width: 100%;
+    position: absolute;
+}
+a{
+    text-decoration: none;
+}
+.title{
+    position: fixed;
+    top: 0px;
+    padding: 20px 100px 20px;
+    width: 100%;
+    display: flex;
+    font-size: 25px;
+    color: #03a9f4;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    top: 0px;
+    background: none;
+}
+#navbar{
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-left: 39%;
+    padding-top: 6px;
+    list-style: none;
+    display: flex;
+}
+#navbar a{
+    color: white;
+}
+#navbar a:hover{
+    color: #cccccc;
+}
+.diff{
+    color: #03a9f4 !important;
+}
+#navbar li{
+    margin-right:  25px;
+}
+.disc{
+    position: relative;
+    margin-top: 200px;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    line-height: 49px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    word-spacing: 5px;
+}
+.bold{
+    font-size: 42px;
+}
+.titleback hr{
+    width: 18%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    border-color: white;
+}
+.buttons{
+    display: flex;
+    padding-top: 50px;
+    height: 9%;
+    width: 376px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#what{
+    margin-right: 20px;
+    background-color: #03a9f4;
+    border: 3.5px solid #03a9f4;
+}
+#talk{
+    background: none;
+    border: 3.5px solid white;
+}
+#what , #talk{
+    width: 178px;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-sizing: content-box;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: sans-serif;    
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+#what:hover{
+    background: none;
+    border: 3.5px solid white;
+}
+#talk:hover{
+    background-color: #03a9f4; 
+    border: 3.5px solid #03a9f4;
+}
+@media only screen and (max-width:748px){
+    .title{
+        background-color: dimgray;
+        display: block;
+        padding: 10px 12px 0px;
+        width: 100%;
+        height: 7%;
+        font-weight: bold;
+        margin-left: -8px;
+    }
+    #navbar{
+
+    }
+    .disc{
+        width: 90%;
+    }
+    .titleback hr{
+        width: 50%
+    }
+}
