@@ -115,6 +115,13 @@ a{
     background-color: #03a9f4; 
     border: 3.5px solid #03a9f4;
 }
+
+/* to change in smooth way */
+.titleback {
+    transition: background-image 2s ease;
+    -webkit-transition: background-image 2s ease;
+  }
+
 @media only screen and (max-width:748px){
     .title{
         background-color: dimgray;
