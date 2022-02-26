@@ -115,6 +115,12 @@ a{
     background-color: #03a9f4; 
     border: 3.5px solid #03a9f4;
 }
+
+.titleback{
+    transition: background-image 1.5s ease-in-out;
+    background-image: url('../images/home-bg-slideshow1.jpg');
+}
+
 @media only screen and (max-width:748px){
     .title{
         background-color: dimgray;
