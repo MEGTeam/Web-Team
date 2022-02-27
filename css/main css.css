@@ -116,11 +116,10 @@ a{
     border: 3.5px solid #03a9f4;
 }
 
-/* to change in smooth way */
-.titleback {
-    transition: background-image 2s ease;
-    -webkit-transition: background-image 2s ease;
-  }
+.titleback{
+    transition: background-image 1.5s ease-in-out;
+    background-image: url('../images/home-bg-slideshow1.jpg');
+}
 
 @media only screen and (max-width:748px){
     .title{
