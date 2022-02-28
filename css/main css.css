@@ -15,6 +15,11 @@ and open the template in the editor.
     position: absolute;
     transition: background-image 1.5s ease-in-out;
     background-image: url('../images/home-bg-slideshow1.jpg');
+    /* You need to fix:
+     "position:absolute" issue 
+     and then remove the "display:none"
+     :)
+     */
     display: none;
 }
 a{
@@ -118,12 +123,13 @@ a{
     border: 3.5px solid #03a9f4;
 }
 
+
 /* Start our portofolio */
 
 .our_port{
     padding:100px 20px 80px 20px;
     display: flex;
-    background-color: rgb(236, 236, 236);
+    background-color: #f6f6f6;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -151,10 +157,12 @@ a{
     top: 50px;
     background-color: rgba(136, 136, 136, 0.753);
 }
-
 .small_nav ul{
     margin-top: 50px;
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     gap: 60px;
     font-weight: bold;
     list-style: none;
@@ -225,6 +233,8 @@ a{
     .titleback hr{
         width: 50%
     }
+
+    /* Start our portofolio */
     .grid_containor{
         display: flex;
         flex-direction: column;
@@ -237,22 +247,22 @@ a{
         width: 100%;
         height: 350px;
     }
+
     .small_nav ul{
         margin-top: 50px;
         display: flex;
-        gap: 20px;
         font-weight: bold;
         list-style: none;
     }
+    /* End our portofolio */
 }
 
 
 @media only screen and (max-width:1080px) and (min-width:748px){
+    /* Start our portofolio */
     .grid_containor{
         display: grid;
-        /* gap: 20px; */
         grid-template-columns: auto auto;
-        /* padding: 0 80px ; */
     }
     .grid_containor > .grid_item{
         width:  100%;
@@ -264,4 +274,5 @@ a{
     .small_nav ul{
         gap: 40px;
     }
+    /* End our portofolio */
 }
