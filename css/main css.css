@@ -9,11 +9,13 @@ and open the template in the editor.
 */
 .titleback{/*background-image*/
     text-transform: capitalize;
-    background-color: #897393;
     height: 625px;
     margin: -8px 0px 0px -8px;
     width: 100%;
     position: absolute;
+    transition: background-image 1.5s ease-in-out;
+    background-image: url('../images/home-bg-slideshow1.jpg');
+    display: none;
 }
 a{
     text-decoration: none;
@@ -116,10 +118,99 @@ a{
     border: 3.5px solid #03a9f4;
 }
 
-.titleback{
-    transition: background-image 1.5s ease-in-out;
-    background-image: url('../images/home-bg-slideshow1.jpg');
+/* Start our portofolio */
+
+.our_port{
+    padding:100px 20px 80px 20px;
+    display: flex;
+    background-color: rgb(236, 236, 236);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
+
+.our_port h1 {
+    font-size:60px;
+    color: #04cfdd;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.our_port h3 {
+    text-transform: uppercase;
+    position: relative;
+}
+
+.our_port h3::after{
+    content: "";
+    width: 90%;
+    height: 0.2px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 50px;
+    background-color: rgba(136, 136, 136, 0.753);
+}
+
+.small_nav ul{
+    margin-top: 50px;
+    display: flex;
+    gap: 60px;
+    font-weight: bold;
+    list-style: none;
+}
+
+.small_nav ul li a{
+    color: #7c7c7cbe;
+}
+.small_nav ul li a:hover{
+    color: #03a9f4;
+    text-decoration: none;
+}
+
+.small_nav ul li:first-child a{
+    color: #03a9f4;
+}
+
+.grid_containor{
+    display: grid;
+    grid-template-columns: 30vw 30vw 30vw;
+    gap: 35px;
+    margin: auto;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+/* for testing */
+body{
+    padding-top: 800px;
+    height: 600vh;
+}
+
+
+.grid_containor > .grid_item{
+    position: relative;
+}
+.grid_containor > .grid_item img{
+    width: 30vw;
+    height: 40vh;
+    position: relative;
+    display: block;
+}
+.grid_containor > .grid_item::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(243, 243, 243, 0.623);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+.grid_containor > .grid_item:hover::after{
+    opacity: 1;
+}
+/* End our portofolio */
 
 @media only screen and (max-width:748px){
     .title{
@@ -139,5 +230,44 @@ a{
     }
     .titleback hr{
         width: 50%
+    }
+    .grid_containor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .grid_containor > .grid_item{
+        width: 80%;
+    }
+    .grid_containor > .grid_item img{
+        width: 100%;
+        height: 350px;
+    }
+    .small_nav ul{
+        margin-top: 50px;
+        display: flex;
+        gap: 20px;
+        font-weight: bold;
+        list-style: none;
+    }
+}
+
+
+@media only screen and (max-width:1080px) and (min-width:748px){
+    .grid_containor{
+        display: grid;
+        /* gap: 20px; */
+        grid-template-columns: auto auto;
+        /* padding: 0 80px ; */
+    }
+    .grid_containor > .grid_item{
+        width:  100%;
+    }
+    .grid_containor > .grid_item img{
+        width: 100%;
+        height: 350px;
+    }
+    .small_nav ul{
+        gap: 40px;
     }
 }
