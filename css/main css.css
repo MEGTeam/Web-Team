@@ -180,12 +180,6 @@ a{
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
-/* for testing */
-body{
-    padding-top: 800px;
-    height: 600vh;
-}
-
 
 .grid_containor > .grid_item{
     position: relative;
