@@ -17,6 +17,9 @@ and open the template in the editor.
     background-size: cover;
     background-repeat: no-repeat;
     box-sizing: border-box;
+    /* needed css for image slider */
+    background-image: url("../images/home-bg-slideshow1.jpg");
+    transition: background-image 1.5s ease-in-out;
 }
 a{
     text-decoration: none;
