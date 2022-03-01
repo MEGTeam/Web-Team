@@ -11,4 +11,18 @@ window.onload = function () {
         changeImageInt = changeImageInt === 0 ? 1 : 0
         target.style.backgroundImage = "url('" + backgroundImgs[changeImageInt] + "')";
     }
-  }
+}
+
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return rect.top <= 600 ;
+}
+
+
+document.addEventListener("scroll", () => {
+    const target = document.querySelector(".grid_containor")
+    if (isInViewport(target)) {
+        target.style.opacity = 1        
+    }
+})
+
