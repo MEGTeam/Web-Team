@@ -22,7 +22,7 @@ a{
     text-decoration: none;
 }
 .title{
-   position: fixed;
+    position: fixed;
     padding: 15px 100px 20px;
     width: 100%;
     display: inline-block;
@@ -156,6 +156,7 @@ a{
         flex-direction: column;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 25%;
     }
     #what{
         margin-bottom: 25px;
