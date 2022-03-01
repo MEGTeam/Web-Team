@@ -1,7 +1,7 @@
 window.onload = function () {
     const backgroundImgs = [
-        "../images/home-bg-slideshow1.jpg",
-        "../images/home-bg-slideshow2.jpg"
+        "./images/home-bg-slideshow1.jpg",
+        "./images/home-bg-slideshow2.jpg"
     ]
     let changeImageInt = 0;
     let target = document.querySelector(".titleback")
