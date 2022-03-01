@@ -9,21 +9,23 @@ and open the template in the editor.
 */
 .titleback{/*background-image*/
     text-transform: capitalize;
-    background-color: #897393;
-    height: 625px;
-    margin: -8px 0px 0px -8px;
+    margin: 0px 0px 0px 0px;
     width: 100%;
-    position: absolute;
+    top: 0px;
+    position: relative;
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
 }
 a{
     text-decoration: none;
 }
 .title{
-    position: fixed;
-    top: 0px;
-    padding: 20px 100px 20px;
+   position: fixed;
+    padding: 15px 100px 20px;
     width: 100%;
-    display: flex;
+    display: inline-block;
     font-size: 25px;
     color: #03a9f4;
     font-family: 'Roboto', sans-serif;
@@ -34,22 +36,20 @@ a{
 #navbar{
     font-size: 14px;
     text-transform: uppercase;
-    margin-left: 39%;
-    padding-top: 6px;
+    margin-left: 55%;
     list-style: none;
     display: flex;
+    margin-top: -25px;
 }
 #navbar a{
     color: white;
 }
 #navbar a:hover{
     color: #cccccc;
-}
-.diff{
-    color: #03a9f4 !important;
+    text-decoration: none;
 }
 #navbar li{
-    margin-right:  25px;
+    margin-right: 30px;
 }
 .disc{
     position: relative;
@@ -79,10 +79,11 @@ a{
 .buttons{
     display: flex;
     padding-top: 50px;
-    height: 9%;
+    height: 17%;
     width: 376px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 13%;
 }
 #what{
     margin-right: 20px;
@@ -124,20 +125,45 @@ a{
 @media only screen and (max-width:748px){
     .title{
         background-color: dimgray;
-        display: block;
-        padding: 10px 12px 0px;
-        width: 100%;
-        height: 7%;
+        display: inline-block;
+        padding: 6px 18px 0px;
+        width: 102%;
+        height: 50px;
         font-weight: bold;
         margin-left: -8px;
     }
     #navbar{
-
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-left: 54%;
+        list-style: none;
+        display: flex;
+        margin-top: -28px;
+    }
+    #navbar li{
+        margin-right: 28px;
+        font-weight: bold;
     }
     .disc{
         width: 90%;
     }
     .titleback hr{
-        width: 50%
+        width: 50%;
+    }
+    .buttons{
+        width: fit-content;
+        height: auto;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #what{
+        margin-bottom: 25px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #talk{
+        margin-left: auto;
+        margin-right: auto;
     }
 }
