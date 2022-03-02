@@ -25,4 +25,3 @@ document.addEventListener("scroll", () => {
         target.style.opacity = 1        
     }
 })
-

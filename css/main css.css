@@ -38,6 +38,7 @@ a{
     font-weight: bold;
     top: 0px;
     background: none;
+    z-index: 2;
 }
 #navbar{
     font-size: 14px;
@@ -249,7 +250,7 @@ a{
         flex-direction: column;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 25%;
+        margin-bottom: 30%;
     }
     #what{
         margin-bottom: 25px;
