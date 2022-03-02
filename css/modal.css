@@ -10,38 +10,40 @@
     height: 100vh;
     overflow: hidden;
     background-color: black;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Modal Content */
-.modal-content {
+.modal-content_ {
     position: relative;
     background-color: #fefefe;
     margin: auto;
     padding: 0;
     width: 50%;
-    height: 70%;
+    height: 80%;
     max-width: 1200px;
     max-height: 80vh;
 }
 
-.mySlides {
+.mySlides_ {
     display: none;
     width: 100%;
     height: 100%;
 }
 
-.modal-content img{
+.modal-content_ img{
     width: 100%;
     height: 100%;
 }
 
 
-.cursor {
+.cursor_ {
     cursor: pointer;
 }
 
 /* The Close Button */
-.close {
+.close_ {
     color: white;
     position: absolute;
     top: 10px;
@@ -53,8 +55,8 @@
     transition: background-color 0.3s ease-in-out;
 }
 
-.close:hover,
-.close:focus {
+.close_:hover,
+.close_:focus {
     color: #999;
     text-decoration: none;
     cursor: pointer;
@@ -63,15 +65,15 @@
 
 
 /* Next & previous buttons */
-.prev,
-.next {
+.prev_,
+.next_ {
     cursor: pointer;
     position: absolute;
     top: 50%;
     width: auto;
     padding: 16px;
     margin-top: -50px;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255) !important;
     font-weight: bold;
     font-size: 20px;
     transition: 0.6s ease;
@@ -81,28 +83,47 @@
 }
 
 /* Position the "next button" to the right */
-.next {
-    right: 5%;
+.next_ {
+    right: 25px;
     border-radius: 3px 0 0 3px;
 }
-.prev {
-    left: 5%;
+.prev_ {
+    left: 25px;
     border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-    background-color: rgba(255, 255, 255, 0.8);
-    color: rgb(85, 85, 85); 
+.prev_:hover,
+.next_:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0) !important; 
 }
 
 
-@media only screen and (max-width:748px){
-    .modal-content {
-        width: 60%;
-        height: 70%;
-        max-width: 1200px;
+@media only screen and (max-width:1080px) and (min-width:748px){
+    .modal-content_ {
+        width: 70%;
+        height: 60%;
         max-height: 80vh;
+    }
+    .close_,.next_{
+    right: 5px;
+    }
+    .prev_{
+    left: 5px;
+    }
+}
+
+@media only screen and (max-width:748px){
+    .modal-content_ {
+        width: 70%;
+        height: 45%;
+        max-height: 80vh;
+    }
+    .close_,.next_{
+    right: 5px;
+    }
+    .prev_{
+    left: 5px;
     }
 }
