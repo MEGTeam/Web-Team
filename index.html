@@ -13,15 +13,16 @@ and open the template in the editor.
         
         <!--Main css -->
         <link rel="stylesheet" href="css/main css.css"/>
+        <link rel="stylesheet" href="css/modal.css"/>
         <!--Bootstrap-->
-        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <!-- <link rel="stylesheet" href="css/bootstrap.css"/> -->
         <!--google fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display&family=Open+Sans&family=Righteous&family=Roboto:wght@300&display=swap" rel="stylesheet">
     </head>
     <body>
-        <!<!-- Main Div -->
+        <!-- Main Div -->
         <div class="titleback">
             <div class="title">
                 digital team
@@ -68,22 +69,22 @@ and open the template in the editor.
                 </ul>
             </div>
             <div class="grid_containor">
-                <div class="grid_item">
-                    <img src="./images/portfolio-img1.jpg" alt="" srcset="">
+                <div class="grid_item" onclick="openModal();currentSlide(1)">
+                    <img src="./images/portfolio-img1.jpg" alt="" srcset="" >
                 </div>
-                <div class="grid_item">
+                <div class="grid_item" onclick="openModal();currentSlide(2)">
                     <img src="./images/portfolio-img2.jpg" alt="" srcset="">
                 </div>
-                <div class="grid_item">
+                <div class="grid_item" onclick="openModal();currentSlide(3)">
                     <img src="./images/portfolio-img3.jpg" alt="" srcset="">
                 </div>
-                <div class="grid_item">
+                <div class="grid_item" onclick="openModal();currentSlide(4)">
                     <img src="./images/portfolio-img4.jpg" alt="" srcset="">
                 </div>
-                <div class="grid_item">
+                <div class="grid_item" onclick="openModal();currentSlide(5)">
                     <img src="./images/portfolio-img5.jpg" alt="" srcset="">
                 </div>
-                <div class="grid_item">
+                <div class="grid_item" onclick="openModal();currentSlide(6)">
                     <img src="./images/portfolio-img6.jpg" alt="" srcset="">
                 </div>
             </div>
@@ -91,6 +92,44 @@ and open the template in the editor.
 
         <!-- End our_port -->
 
+        <!-- modal starts -->
+        <div id="myModal" class="modal_">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="modal-content">
+          
+              <div class="mySlides">
+                <img src="./images/portfolio-img1.jpg" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                <img src="./images/portfolio-img2.jpg" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                <img src="./images/portfolio-img3.jpg" style="width:100%">
+              </div>
+              
+              <div class="mySlides">
+                <img src="./images/portfolio-img4.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <img src="./images/portfolio-img5.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <img src="./images/portfolio-img6.jpg" style="width:100%">
+              </div>
+              
+
+          
+            </div>
+          </div>
+          <!-- modal finishes -->
+
         <script src="./js/script.js"></script>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
