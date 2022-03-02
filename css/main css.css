@@ -7,6 +7,9 @@ and open the template in the editor.
     Created on : Feb 24, 2022, 9:55:12 PM
     Author     : E M T
 */
+*{
+    font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
 .titleback{/*background-image*/
     text-transform: capitalize;
     margin: 0px 0px 0px 0px;
@@ -188,6 +191,7 @@ a{
 
 .grid_containor > .grid_item{
     position: relative;
+    cursor: pointer;
 }
 .grid_containor > .grid_item img{
     width: 30vw;
