@@ -70,7 +70,7 @@ a{
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
-    border-color: white;
+    color: white !important;
 }
 .buttons{
     display: flex;
@@ -204,7 +204,110 @@ a{
     opacity: 1;
 }
 /* End our portofolio */
-
+/* Start Pricing */
+.our-pricing{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 90px;
+}
+.pricing{
+    text-align: center;
+    color: #00c6D7;
+    font-size: 50px;
+}
+.pricing p{
+    color: black;
+    margin-top: 10px;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+.pricing hr{
+    width: 13%;
+    margin-top: -10px;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+}
+.tabless{
+    display: flex;
+    box-sizing: border-box;
+    width: 87%;
+    margin-left: 8%;
+    margin-right: 5%;
+    margin-top: 40px
+}
+.table{
+    width: 30%;
+    border: 1px solid #80808030;
+    margin-right: 3%;
+    display: inline-block;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0px 0px 13px -8px black;
+}
+.icons{
+    border: 1px solid #80808030;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    box-sizing: border-box;
+    margin: 55px auto 40px;
+    box-shadow: 0px 0px 13px -8px black;;
+}
+#icons{
+    width: 40px;
+    margin: 40px;
+}
+.first-lines{
+    line-height: 58px;
+    font-size: 20px;
+    border: hidden !important;
+}
+.first-lines b{
+    font-size: 50px;
+}
+.first-lines p span{
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+.details{
+    line-height: 45px;
+    font-size: 12px;
+    border: hidden !important;
+}
+.get-it ,.take-this,.buy-now{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 8%;
+    font-size: 20px;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    padding-top: 3.5%;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    overflow: hidden;
+    transition-duration: 0.2s
+}
+.get-it:hover ,.take-this:hover,.buy-now:hover{
+    background-color: black
+}
+.get-it{
+    background-color: #00c6D7;
+}
+.take-this{
+    background-color: #ffa400;
+}
+.buy-now{
+    background-color: #009988
+}
+/* End Pricing */
 @media only screen and (max-width:748px){
     .title{
         display: inline-block;
@@ -297,5 +400,30 @@ a{
     .container-fluid{
         margin-right: 80px !important;
         padding-left: 150px !important;
+    }
+}
+/* Start Pricing */
+@media only screen and (max-width: 768px) {
+    .our-pricing{
+        margin-top: 20px
+    }
+    .tabless{
+        flex-wrap: wrap;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .table{
+        width: 98%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25px;
+    }
+    .pricing hr{
+        width: 30%
+    }
+    .get-it ,.take-this,.buy-now{
+        width: 35%;
+        padding-top: 14px;
     }
 }
