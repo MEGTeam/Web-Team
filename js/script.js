@@ -25,3 +25,12 @@ document.addEventListener("scroll", () => {
         target.style.opacity = 1        
     }
 })
+
+document.addEventListener("scroll", () => {
+    const target = document.querySelector(".navbar")
+    if (window.pageYOffset > 120) {
+        target.classList.add("back_ground")
+    } else {
+        target.classList.remove("back_ground")
+    }
+})

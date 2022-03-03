@@ -10,6 +10,9 @@ and open the template in the editor.
 *{
     font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+html {
+    scroll-behavior: smooth;
+}
 .titleback{/*background-image*/
     text-transform: capitalize;
     margin: 0px 0px 0px 0px;
@@ -20,44 +23,30 @@ and open the template in the editor.
     background-size: cover;
     background-repeat: no-repeat;
     box-sizing: border-box;
+    min-height: 100vh;
     /* needed css for image slider */
     background-image: url("../images/home-bg-slideshow1.jpg");
     transition: background-image 1.5s ease-in-out;
 }
 a{
-    text-decoration: none;
+    text-decoration: none !important;
 }
-.title{
-    position: fixed;
-    padding: 15px 100px 20px;
-    width: 100%;
-    display: inline-block;
-    font-size: 25px;
-    color: #03a9f4;
-    font-family: 'Roboto', sans-serif;
+.back_ground{
+    background-color: #4b4b4b;
+}
+.active{
     font-weight: bold;
-    top: 0px;
-    background: none;
-    z-index: 2;
+    font-size: 0.9em;
 }
-#navbar{
-    font-size: 14px;
-    text-transform: uppercase;
-    margin-left: 55%;
-    list-style: none;
-    display: flex;
-    margin-top: -25px;
+
+#first_link{
+    color: #04cfdd !important;
 }
-#navbar a{
-    color: white;
+
+.nav-link:hover{
+    color: #04cfdd !important;
 }
-#navbar a:hover{
-    color: #cccccc;
-    text-decoration: none;
-}
-#navbar li{
-    margin-right: 30px;
-}
+
 .disc{
     position: relative;
     margin-top: 200px;
@@ -218,7 +207,6 @@ a{
 
 @media only screen and (max-width:748px){
     .title{
-        background-color: dimgray;
         display: inline-block;
         padding: 6px 18px 0px;
         width: 102%;
@@ -303,4 +291,11 @@ a{
         gap: 40px;
     }
     /* End our portofolio */
+}
+
+@media only screen and (min-width:1080px){
+    .container-fluid{
+        margin-right: 80px !important;
+        padding-left: 150px !important;
+    }
 }
