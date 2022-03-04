@@ -82,6 +82,10 @@
   background-color: rgba(136, 136, 136, 0.753);
 }
 
+.card_p p a:hover {
+  text-decoration: underline !important;
+}
+
 
 .cards .card_notB .card_p p {
   margin: 0;
