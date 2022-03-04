@@ -40,7 +40,7 @@
 }
 
 .cards{
-  display: grid;
+  display: grid;  
   grid-template-columns: 30vw 30vw 30vw;
   margin: auto;
 }
@@ -58,6 +58,7 @@
 .cards .card_notB:hover{
   box-shadow: 2px 2px 8px 0px rgb(50 50 50 / 20%);
 }
+
 
 .cards .card_notB .icon img{
   width: 40px;
@@ -88,6 +89,7 @@
 
   line-height: 1.8;
 }
+
 
 
 @media only screen and (max-width:748px){
