@@ -266,6 +266,7 @@ a{
     outline: none;
 }
 .form-4{
+    color: #ffffff;
     background-color: #00c6d7;
     border: 3px solid #00c6d7;
     width: 320px;
@@ -273,6 +274,9 @@ a{
     margin-left: 220px;
     margin-top: 25px;
     margin-bottom: 100px;
+}
+.form-4:hover{
+    color: #000000;
 }
 .icon-and-txt{
     display: flex;
