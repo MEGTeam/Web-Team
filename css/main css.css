@@ -216,6 +216,117 @@ a{
 }
 /* End our portofolio */
 
+/* start section contact-us */
+.CONTACT-US{
+    background-image: url("../images/contact-bg.jpg");
+}
+.txt-1 h1{
+    text-align: center;
+    color: #00C6D7;
+    padding-top: 80px;
+    font-size: 56px;
+}
+.txt-1 h2{
+    text-align: center;
+    color: #ffffff;
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.trace{
+    width: 165px;
+    height: 1px;
+    margin-top: 10px;
+    margin-bottom: 32px;
+    background-color: #ccc;
+    margin-left: 44%;
+}
+.txt-2{
+    color: #ffffff;
+}
+.txt-2 h2{
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.txt-2 p{
+    font-size: 15px;
+}
+.form-1{
+    height: 40px;
+    width: 280px;
+    padding-left: 10px;
+    margin-top: 50px;
+    outline: none;
+}
+.form-2{
+    height: 40px;
+    width: 280px;
+    margin-left: 25px;
+    padding-left: 10px;
+    margin-top: 50px;
+    outline: none;
+}
+.txt-3{
+    display: flex;
+}
+.form-3{
+    height: 170px;
+    width: 540px;
+    padding-left: 10px;
+    outline: none;
+}
+.form-4{
+    background-color: #00c6d7;
+    border: 3px solid #00c6d7;
+    width: 320px;
+    height: 45px;
+    margin-left: 220px;
+    margin-top: 25px;
+    margin-bottom: 100px;
+}
+.icon-and-txt{
+    display: flex;
+}
+.img-1{
+    height: 45px;
+    width: 45px;
+    padding-left: 5px;
+}
+.img-2{
+    height: 35px;
+    width: 30px;
+    margin-top: 2px;
+}
+.txt-4 h3{
+    font-size: 16px;
+    color: #ffffff;
+    padding-left: 20px;
+    margin-top: 13px;
+    margin-bottom: 10px;
+}
+.txt-5 h3{
+    font-size: 16px;
+    color: #ffffff;
+    padding-left: 20px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+.txt-4 p{
+    color: #ffffff;
+    line-height: 20px;
+    font-size: 15px;
+    padding-right: 90px;
+}
+.txt-5 p{
+    color: #ffffff;
+    line-height: 20px;
+    font-size: 15px;
+    padding-right: 20px;
+}
+
+/* end section contact-us  */
+
 @media only screen and (max-width:748px){
     .title{
         background-color: dimgray;
