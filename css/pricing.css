@@ -1,0 +1,147 @@
+.pricing_con{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:100px 50px 80px 50px;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.pricing_con .header{
+    margin-bottom: 3.5em;
+}
+
+.pricing_con .header h1{
+    font-size:60px;
+    color: #04cfdd;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+.pricing_con .header h3{
+    text-transform: uppercase;
+    position: relative;
+    font-size:25px;
+    font-weight: bold;
+}
+.pricing_con .header h3::after{
+    content: "";
+    width: 90%;
+    height: 0.2px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 50px;
+    background-color: rgba(136, 136, 136, 0.753);
+}
+
+.grid_4{
+    display: grid;  
+    text-align: center;
+    grid-template-columns: repeat(4 , 1fr);
+    margin: auto;
+    width: 80%;
+    gap: 2% ;
+}
+
+.grid_4 .grid_4_item{
+    color: white;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+}
+
+.img_back img{
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.grid_4_item .img_back_con{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 35px;
+    padding: 15px 0;
+    transform: translate(50% , -50%);
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    background-color: #000000b2;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.grid_4_item .img_back_con .text p{
+    color: #04cfdd;
+    font-weight: bold;
+    position: relative;
+}
+
+.grid_4_item .img_back_con .text p::after{
+    content: "";
+    width: 150%;
+    height: 0.2px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 50px;
+    background-color: rgb(255, 255, 255);
+}
+
+.grid_4_item .img_back_con .text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.grid_4_item .img_back_con:hover{
+    opacity: 1;
+}
+
+.icon_s{
+    padding-top: 1.5em;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.icon_s *{
+    cursor: pointer;
+    font-size: 1.4em;
+    transition: all 0.4s ease-in-out;
+}
+#twitter:hover , #w:hover{
+    color: #04cfdd;
+}
+
+#f:hover{
+    background-color: #04cfdd;
+}
+#f{
+    clip-path: circle(40% at 50% 50%);
+}
+
+
+@media only screen and (max-width:748px){
+    .grid_4{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+  
+  
+  
+  @media only screen and (max-width:1080px) and (min-width:748px){
+    .grid_4{
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 50px;
+    }
+  }
+  
