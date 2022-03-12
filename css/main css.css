@@ -312,6 +312,9 @@ a{
 /* start section contact-us */
 .CONTACT-US{
     background-image: url("../images/contact-bg.jpg");
+    /* remove this when make this section responsive :) */
+    /* this just to solve responsive issue temporarily */
+    overflow: hidden;
 }
 .txt-1 h1{
     text-align: center;
