@@ -1,6 +1,7 @@
 # Languages Used:
 * HTML
 * CSS
+* Bootstrap
 * JS
 
 **Made By MEG Team** <br>
