@@ -1,5 +1,9 @@
-# template-1
+# Languages Used:
+* HTML
+* CSS
+* JS
 
---------------
-https://eyad-zanaty.github.io/template-1.github.io/
---------------
+**Made By MEG Team** <br>
+*Web Developers Website*
+
+[Website Link](https://megteam.github.io/Web-Team/)
